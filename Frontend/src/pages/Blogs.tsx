@@ -30,7 +30,7 @@ export const Blogs = () => {
           {blogs.map((blog) => (
             <BlogCard
               id={blog.id}
-              authorName={blog.author.name || "Astitva"}
+              authorName={blog.author.name || "Anonynous"}
               title={blog.title}
               content={blog.content}
               publishedDate={"2nd Feb 2024"}

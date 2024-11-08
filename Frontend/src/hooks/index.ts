@@ -7,13 +7,13 @@ export interface Blog {
   title: string;
   id: string;
   author: {
-    name: "string";
+    name: string;
   };
 }
 
 export const useBlog = ({ id }: { id: string }) => {
   const [loading, setLoading] = useState(true);
-  const [blog, setBlog] = useState<Blog[]>([]);
+  const [blog, setBlog] = useState<Blog>();
 
   useEffect(() => {
     axios
